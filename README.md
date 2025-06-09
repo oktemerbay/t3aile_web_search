@@ -23,7 +23,7 @@ Uygulamanın çalışabilmesi için proje dizinine aşağıdaki içeriğe sahip 
 # Brave Search API Token
 BRAVE_SEARCH_TOKEN=***************
 
-# Uygulamanın ana çalışma yolu
+# Uygulamanın arama sonuçlarını çıktığı klasör
 MAIN_OPERATION_PATH=/path/to/local/
 
 # SearXNG Self-hosted arama servisi adresi
