@@ -41,6 +41,9 @@ SERP_API_API_KEY=***************
 
 # Serper.dev Anahtarı
 SERPER_DEV_API_KEY=***************
+
+#Facebook Faiss RAG yapısının kullanılıp kullanılmayacağı ; False ise kullanılmaz , True ise devreye girer
+IS_USE_FAISS=False
 ```
 
 > 📌 **Not:** Yukarıdaki değerlerin her biri ilgili servis sağlayıcıdan alınmalıdır. Güvenlik açısından gerçek anahtarlar paylaşılmamalı ve `.env` dosyası `.gitignore` içine eklenmelidir.
