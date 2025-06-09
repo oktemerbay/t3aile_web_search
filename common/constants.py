@@ -1,0 +1,3 @@
+SEARCH_RAW_RESULT_FOLDER_NAME="search_raw_result_samples_per_api_2"
+SEARCH_RESULT_FOLDER_NAME="search_result_samples_per_api_2"
+LLM_RESULT_FOLDER_NAME="model_search_result_2"
