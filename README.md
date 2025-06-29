@@ -1,6 +1,23 @@
-# T3AI Projesi - Web Search API Entegrasyonu
+# T3 AI'LE Web Search Pipeline
 
-Bu dosya, T3AI projesi kapsamında kullanılan Web Search API sağlayıcılarını ve projeyi çalıştırmak için gerekli `.env` dosyası parametrelerini içermektedir.
+## 🧠 Proje Hakkında
+
+**T3 AI'LE**, Türkiye'nin büyük dil modeli (LLM) oluşturma vizyonu kapsamında geliştirilmiş açık kaynaklı bir projedir. Bu proje, kullanıcılardan alınan doğal dil sorgularını web üzerinden aratıp, sonuçları büyük dil modeli ile işleyerek zenginleştirilmiş yanıtlar üretir. 
+
+Ana hedefimiz, Türkçe dilinde güçlü bilgi tabanı oluşturarak Türkiye'ye ait özgün ve güncel içerikleri, yapay zeka destekli bir pipeline ile kullanıcıya sunmaktır.
+
+---
+
+## 🔧 Özellikler
+
+✅ Kullanıcıdan doğal dil sorgusu alma  
+✅ Seçilebilir Search API modülleri  
+✅ Search API üzerinden web araması yapma  
+✅ Sonuçları büyük dil modeli (LLM) ile işleyip anlamlı cevaplar üretme  
+✅ Modüler ve genişletilebilir mimari  
+✅ Tamamen açık kaynak ve topluluk katkısına açık yapı
+
+---
 
 ## Entegre Edilen Web Search API Sağlayıcıları
 
@@ -14,6 +31,8 @@ T3AI içerisinde aşağıdaki web search API sağlayıcıları desteklenmektedir
 * **Serper.dev**
 
 ---
+
+Projeyi çalıştırmak için gerekli `.env` dosyası parametrelerini aşağıda paylaşıyorum.
 
 ## .env Dosyası İçeriği
 
@@ -45,5 +64,28 @@ SERPER_DEV_API_KEY=***************
 #Facebook Faiss RAG yapısının kullanılıp kullanılmayacağı ; False ise kullanılmaz , True ise devreye girer
 IS_USE_FAISS=False
 ```
+
+## 🗂️ Proje Yapısı
+
+├── common/
+│ ├── constants.py
+│ ├── common.py
+│ └── LLMEvaluator.py
+├── search_modules/
+│ ├── BraveSearchAPI.py
+│ ├── ContextualWebAPI.py
+│ ├── GoogleCustomSearch.py
+│ ├── Searxng.py
+│ ├── SerpAPI.py
+│ ├── SerpAPI.py
+│ └── SerperDev.py
+├── search_module.py
+├── requirements.txt
+└── README.md
+
+- **common/**: Ortak fonksiyonlar, sabitler ve LLM evaluator modülü  
+- **search_modules/**: Farklı arama motorları için modüller  
+- **search_module.py**: Arama motoru seçim ve dispatch mekanizması
+
 
 > 📌 **Not:** Yukarıdaki değerlerin her biri ilgili servis sağlayıcıdan alınmalıdır. Güvenlik açısından gerçek anahtarlar paylaşılmamalı ve `.env` dosyası `.gitignore` içine eklenmelidir.
