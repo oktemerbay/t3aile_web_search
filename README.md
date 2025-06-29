@@ -67,21 +67,24 @@ IS_USE_FAISS=False
 
 ## 🗂️ Proje Yapısı
 
-├── common/__
-│ ├── constants.py__
-│ ├── common.py__
-│ └── LLMEvaluator.py__
-├── search_modules/__
-│ ├── BraveSearchAPI.py
-│ ├── ContextualWebAPI.py
-│ ├── GoogleCustomSearch.py
-│ ├── Searxng.py
-│ ├── SerpAPI.py
-│ ├── SerpAPI.py
-│ └── SerperDev.py
+```
+├── common/
+│   ├── constants.py
+│   ├── common.py
+│   └── LLMEvaluator.py
+├── search_modules/
+│   ├── BraveSearchAPI.py
+│   ├── ContextualWebAPI.py
+│   ├── GoogleCustomSearch.py
+│   ├── Searxng.py
+│   ├── SerpAPI.py
+│   ├── SerpAPI.py
+│   └── SerperDev.py
 ├── search_module.py
 ├── requirements.txt
 └── README.md
+```
+
 
 - **common/**: Ortak fonksiyonlar, sabitler ve LLM evaluator modülü  
 - **search_modules/**: Farklı arama motorları için modüller  
