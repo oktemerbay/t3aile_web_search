@@ -39,6 +39,7 @@ Projeyi çalıştırmak için gerekli `.env` dosyası parametrelerini aşağıda
 Uygulamanın çalışabilmesi için proje dizinine aşağıdaki içeriğe sahip bir `.env` dosyası eklenmelidir:
 
 ```env
+[Link Metni](https://brave.com/search/api/)
 # Brave Search API Token
 BRAVE_SEARCH_TOKEN=***************
 
