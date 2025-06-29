@@ -39,8 +39,8 @@ Projeyi çalıştırmak için gerekli `.env` dosyası parametrelerini aşağıda
 Uygulamanın çalışabilmesi için proje dizinine aşağıdaki içeriğe sahip bir `.env` dosyası eklenmelidir:
 
 ```env
-[brave-api]: https://brave.com/search/api/
 # Brave Search API Token
+# API Link: https://brave.com/search/api/
 BRAVE_SEARCH_TOKEN=***************
 
 # Uygulamanın arama sonuçlarını çıktığı klasör
@@ -49,17 +49,21 @@ MAIN_OPERATION_PATH=/path/to/local/
 # SearXNG Self-hosted arama servisi adresi
 SEARXNG_HOST_URL=http://localhost:8080/search
 
-# Contextual Web API Anahtarı
+# Contextual Web API Token
+# API Link: https://rapidapi.com/guides
 CONTEXTUAL_WEB_API_KEY=***************
 
-# Google Custom Search Ayarları
+# Google Custom Search Token
+# API Link: https://programmablesearchengine.google.com/about/
 GOOGLE_CUSTOM_SEARCH_KEY=***************
 GOOGLE_CUSTOM_SEARCH_CX=***************
 
-# SerpAPI Anahtarı
+# SerpAPI Token
+# API Link: https://serpapi.com/
 SERP_API_API_KEY=***************
 
-# Serper.dev Anahtarı
+# Serper.dev Token
+# API Link: https://serper.dev/
 SERPER_DEV_API_KEY=***************
 
 #Facebook Faiss RAG yapısının kullanılıp kullanılmayacağı ; False ise kullanılmaz , True ise devreye girer
