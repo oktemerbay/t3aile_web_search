@@ -67,11 +67,11 @@ IS_USE_FAISS=False
 
 ## 🗂️ Proje Yapısı
 
-├── common/
-│ ├── constants.py
-│ ├── common.py
-│ └── LLMEvaluator.py
-├── search_modules/
+├── common/__
+│ ├── constants.py__
+│ ├── common.py__
+│ └── LLMEvaluator.py__
+├── search_modules/__
 │ ├── BraveSearchAPI.py
 │ ├── ContextualWebAPI.py
 │ ├── GoogleCustomSearch.py
